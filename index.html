@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<header>
+    <h2 class="brand">Yashwanth</h2>
+
+    <nav class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- INTRODUCTION TEXT -->
+<div class="intro-text">
+    <span id="typingText"></span>
+</div>
+
+<!-- MAIN PROFILE SECTION (Photo on the RIGHT) -->
+<section class="main-box">
+
+    <div class="text-area">
+        <h1>Hello, I'm <span class="highlight">Yashwanth</span></h1>
+        <h3>Software Developer | Programmer</h3>
+        <p>
+            Passionate developer skilled in building dynamic and responsive websites, 
+            full-stack applications, and efficient backend systems.
+        </p>
+
+        <div class="social-links">
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+        <div class="buttons">
+            <a href="resume.html" class="btn-primary">View Resume</a>
+            <a href="portfolio.html" class="btn-secondary">My Work</a>
+        </div>
+    </div>
+
+    <div class="image-area">
+        <img src="bar....jpg" alt="My Photo">
+    </div>
+
+</section>
+
+<!-- TYPING ANIMATION -->
+<script>
+let text = "Welcome to my new portfolio!";
+let index = 0;
+function typing() {
+    document.getElementById("typingText").innerText = text.slice(0, index);
+    index++;
+    if (index <= text.length) setTimeout(typing, 70);
+}
+typing();
+</script>
+
+</body>
+</html>
